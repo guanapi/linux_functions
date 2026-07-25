@@ -1,4 +1,3 @@
-import sys
 import argparse
 
 def cat(file, show_ends):
