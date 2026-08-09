@@ -13,4 +13,7 @@ def my_more(filename):
                 line_counter = 0
 
 if __name__ == "__main__":
-    my_more("/home/guanapi/.zshrc")
+    parser = argparse.ArgumentParser()
+    parser.add_argument('file')
+    args = parser.parse_args()
+    my_more(args.file)
